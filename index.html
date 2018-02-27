@@ -7,31 +7,86 @@
   <title>BuyWS</title>
   <link href="https://fonts.googleapis.com/css?family=Krona+One|Sumana:700" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 <body>
   <header class="header">
+    <a name="top"></a>
     <div class="logo"></div>
-    <nav class="nav">
+    <nav id="menu" class="nav">
       <ul class="nav__menu">
-        <li class="nav__menu_item"><a href='#'>HOME</a></li>
-        <li class="nav__menu_item"><a href='#'>ABOUT</a></li>
-        <li class="nav__menu_item"><a href='#'>CONTACT</a></li>
+        <li class="nav__menu_item"><a href='#top'>HOME</a></li>
+        <li class="nav__menu_item"><a href='#about'>ABOUT</a></li>
+        <li class="nav__menu_item"><a href='#expertise'>EXPERTISE</a></li>
+        <li class="nav__menu_item"><a href='#contact'>CONTACT</a></li>
       </ul>
     </nav>
     <div class="header__content">
       <h1>We Are Awesome Web Studio</h1>
       <hr>
-      <p align="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation<br> ullamco laboris nisi ut aliquip ex</p>
+      <p align="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation<br> ullamco laboris nisi ut aliquip ex.</p>
     </div>
     <button class="header__button">
-      <a href="#">LEARN MORE</a>
+      <a href='#expertise'>LEARN MORE</a>
     </button>
   </header>
-  <main class="mein">
-
+  <main class="main">
+    <section class="about">
+      <a name="about"></a>
+      <div class="about__image">
+        <img src="image/about.png" align="center" width="100px" alt="">
+      </div>
+      <div class="about__content">
+        <h2 align="center">ABOUT</h2>
+        <hr>
+        <p align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p align="left">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </section>
+    <section class="expertise">
+      <a name="expertise"></a>
+      <h2 align="center">EXPERTISE</h2>
+      <p align="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <hr>
+      <div class="expertise__content">
+        <div class="expertise__content_item item-1">
+          <img class="item__image" src="svg/monitor.svg" width="70px" alt="">
+          <h3 align="center">WEB DESIGN &amp; DEVELOPMENT</h3>
+          <p align="center">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="expertise__content_item item-2">
+          <img class="item__image" src="svg/branding.svg" align="center" width="70px" alt="">
+          <h3 align="center">BRANDING IDENTITY</h3>
+          <p align="center">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="expertise__content_item item-3">
+          <img class="item__image" src="svg/mobile.svg" align="center" width="70px" alt="">
+          <h3 align="center">MOBILE APP</h3>
+          <p align="center">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="expertise__content_item item-4">
+          <img class="item__image" src="svg/pie-chart.svg" align="center" width="70px" alt="">
+          <h3 align="center">SEARCH ENGINE OPTIMIZATION</h3>
+          <p align="center">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="expertise__content_item item-5">
+          <img class="item__image" src="svg/game.svg" align="center" width="70px" alt="">
+          <h3 align="center">GAME DEVELOPMENT</h3>
+          <p align="center">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="expertise__content_item item-6">
+          <img class="item__image" src="svg/heart.svg" align="center" width="70px" alt="">
+          <h3 align="center">MADE WITH LOVE</h3>
+          <p align="center">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer">
-
+    <a name="contact"></a>
   </footer>
+  <script src="javascript.js">
+  </script>
 </body>
 </html>

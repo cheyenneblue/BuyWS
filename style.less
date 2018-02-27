@@ -9,18 +9,24 @@ html {
 
 body {
   font-family: 'Sumana', serif;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #f2f4f4;
 }
 
 /*! ---- HEADER ----- */
 
 .header {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url('image/bgr-1.jpg');
   background-size: cover;
+  margin-bottom: 0;
 }
 
 .logo {
@@ -34,7 +40,7 @@ body {
 
 .nav {
   position: absolute;
-  width: 400px;
+  width: 600px;
   height: 30px;
   right: 0px;
 
@@ -88,6 +94,7 @@ body {
     }
 }
 .header__button {
+  outline:none;
   position: absolute;
   width: 100px;
   height: 40px;
@@ -96,9 +103,129 @@ body {
   margin: -50px 0 0 -50px;
   border: 2px solid #03d3c7;
   background: none;
+  color: #03d3c7;
+  cursor: pointer;
+  transition: all 0.25s ease;
 
     a {
       text-decoration: none;
       color: #03d3c7;
     }
+
+    &:hover {
+      background: #03d3c7;
+
+      a {
+        color:white;
+      }
+    }
+}
+
+/*! ---- MAIN ----- */
+
+.main {
+  position: relative;
+  width: 100vw;
+  height: 200vh;
+  left: 0;
+}
+
+.about {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 600px;
+  height: 80vh;
+  top: 30%;
+  left: 50%;
+  margin: -300px 0 0 -300px;
+  padding-bottom: 30px;
+  color: #343837;
+
+    &__image {
+      padding-top: 50px;
+    }
+
+    &__content {
+      h2 {
+        font-family: 'Krona One', sans-serif;
+        font-size: 26px;
+      }
+
+      hr {
+        border: none;
+        background-color: #03d3c7;
+        width: 80px;
+        height: 2px;
+      }
+
+      p {
+        margin-top: 50px;
+        padding-left: 10px;
+        line-height: 2em;
+        border-left: 2px solid #03d3c7;
+      }
+    }
+}
+
+.expertise {
+  position: relative;
+  top: 100vh;
+  width: 100vw;
+  height: 800px;
+  background-color: #231f44;
+  color: #f2f4f4;
+
+    h2 {
+      padding-top: 30px;
+      font-family: 'Krona One', sans-serif;
+      font-size: 26px;
+    }
+
+    h3 {
+      font-family: 'Krona One', sans-serif;
+      font-size: 12px;
+    }
+
+    p {
+      line-height: 1.5em;
+    }
+
+    hr {
+      border: none;
+      background-color: #03d3c7;
+      width: 80px;
+      height: 2px;
+    }
+}
+
+.expertise__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+
+  &_item {
+    flex-basis: 300px;
+    padding: 10px;
+    height: 200px;
+    margin: 30px;
+    border-bottom: 2px solid #03d3c7;
+
+    .item__image {
+      display: block;
+      margin:0 auto;
+      text-align:center;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
 }
