@@ -35,7 +35,7 @@ body {
 }
 .nav {
   position: absolute;
-  width: 600px;
+  width: 800px;
   height: 30px;
   right: 0px;
 }
@@ -62,7 +62,7 @@ body {
   position: absolute;
   width: 500px;
   height: 200px;
-  top: 80%;
+  top: 500px;
   left: 50%;
   margin: -250px 0 0 -250px;
   color: #f2f4f4;
@@ -85,7 +85,7 @@ body {
   position: absolute;
   width: 100px;
   height: 40px;
-  top: 90%;
+  top: 550px;
   left: 50%;
   margin: -50px 0 0 -50px;
   border: 2px solid #03d3c7;
@@ -108,45 +108,43 @@ body {
 .main {
   position: relative;
   width: 100vw;
-  height: 200vh;
+  height: 1400px;
   left: 0;
 }
 .about {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 600px;
-  height: 80vh;
-  top: 30%;
-  left: 50%;
-  margin: -300px 0 0 -300px;
-  padding-bottom: 30px;
-  color: #343837;
+  position: relative;
+  width: 100vw;
+  height: 100px;
+  top: 50px;
 }
-.about__image {
-  padding-top: 50px;
-}
-.about__content h2 {
+.about h2 {
   font-family: 'Krona One', sans-serif;
   font-size: 26px;
 }
-.about__content hr {
+.about hr {
   border: none;
   background-color: #03d3c7;
   width: 80px;
   height: 2px;
 }
-.about__content p {
+.about p {
   margin-top: 50px;
   padding-left: 10px;
   line-height: 2em;
   border-left: 2px solid #03d3c7;
 }
+.about__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about__content_text {
+  width: 600px;
+}
 .expertise {
   position: relative;
-  top: 100vh;
+  top: 40%;
   width: 100vw;
   height: 800px;
   background-color: #231f44;
@@ -194,4 +192,101 @@ body {
 }
 .expertise__content_item p {
   font-size: 12px;
+}
+.feedback {
+  position: relative;
+  top: 40%;
+  width: 100vw;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+}
+.feedback h2 {
+  padding-top: 30px;
+  font-family: 'Krona One', sans-serif;
+  font-size: 26px;
+}
+.feedback h3 {
+  font-family: 'Krona One', sans-serif;
+  font-size: 12px;
+}
+.feedback p {
+  line-height: 1.5em;
+}
+.feedback hr {
+  border: none;
+  background-color: #03d3c7;
+  width: 80px;
+  height: 2px;
+}
+.feedback__content {
+  width: 100vw;
+  height: 400px;
+}
+.feedback__content_form {
+  position: relative;
+  width: 500px;
+  margin: 70px auto 100px auto;
+}
+.form__name,
+.form__email,
+.form__submit {
+  font-family: 'Krona One', sans-serif;
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  background: transparent;
+  outline: none;
+  color: #535068;
+  border: solid 2px #535068;
+  border-bottom: none;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+.form__name:hover,
+.form__email:hover,
+.form__submit:hover {
+  background: #535068;
+  color: #f2f4f4;
+}
+.form__message {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  background: transparent;
+  outline: none;
+  color: #535068;
+  font-family: 'Krona One', sans-serif;
+  font-size: 0.875em;
+  border: solid 2px #535068;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+.form__message:hover {
+  background: #535068;
+  color: #f2f4f4;
+}
+#submit {
+  font-family: 'Krona One', sans-serif;
+  width: 470px;
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  font-size: 0.875em;
+  color: #f2f4f4;
+  background: #726f89;
+  outline: none;
+  cursor: pointer;
+  border: solid 2px #726f89;
+  border-radius: 5px;
+}
+#submit:hover {
+  background: #535068;
+  border: solid 2px #535068;
 }
