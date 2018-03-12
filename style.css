@@ -14,6 +14,27 @@ body {
   margin: 0;
   background-color: #f2f4f4;
 }
+h1 {
+  font-family: 'Krona One', sans-serif;
+  font-size: 26px;
+}
+h2 {
+  padding-top: 30px;
+  font-family: 'Krona One', sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+h3 {
+  font-family: 'Krona One', sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+hr {
+  border: none;
+  background-color: #03d3c7;
+  width: 80px;
+  height: 2px;
+}
 /*! ---- HEADER ----- */
 .header {
   position: relative;
@@ -60,25 +81,16 @@ body {
 }
 .header__content {
   position: absolute;
-  width: 500px;
+  width: 510px;
   height: 200px;
   top: 500px;
   left: 50%;
   margin: -250px 0 0 -250px;
   color: #f2f4f4;
 }
-.header__content h1 {
-  font-family: 'Krona One', sans-serif;
-  font-size: 25px;
-}
-.header__content hr {
-  border: none;
-  background-color: #03d3c7;
-  width: 80px;
-  height: 2px;
-}
 .header__content p {
   line-height: 1.5em;
+  text-align: center;
 }
 .header__button {
   outline: none;
@@ -108,30 +120,21 @@ body {
 .main {
   position: relative;
   width: 100vw;
-  height: 1400px;
+  height: auto;
   left: 0;
 }
 .about {
   position: relative;
   width: 100vw;
-  height: 100px;
+  height: 650px;
   top: 50px;
-}
-.about h2 {
-  font-family: 'Krona One', sans-serif;
-  font-size: 26px;
-}
-.about hr {
-  border: none;
-  background-color: #03d3c7;
-  width: 80px;
-  height: 2px;
 }
 .about p {
   margin-top: 50px;
   padding-left: 10px;
   line-height: 2em;
   border-left: 2px solid #03d3c7;
+  text-align: left;
 }
 .about__content {
   display: flex;
@@ -142,31 +145,26 @@ body {
 .about__content_text {
   width: 600px;
 }
+.about__content img {
+  text-align: center;
+  width: 100px;
+}
 .expertise {
   position: relative;
   top: 40%;
+  padding-top: 10px;
   width: 100vw;
   height: 800px;
   background-color: #231f44;
   color: #f2f4f4;
 }
-.expertise h2 {
-  padding-top: 30px;
-  font-family: 'Krona One', sans-serif;
-  font-size: 26px;
-}
-.expertise h3 {
-  font-family: 'Krona One', sans-serif;
-  font-size: 12px;
-}
 .expertise p {
   line-height: 1.5em;
+  text-align: center;
 }
-.expertise hr {
-  border: none;
-  background-color: #03d3c7;
-  width: 80px;
-  height: 2px;
+.expertise img {
+  text-align: center;
+  width: 70px;
 }
 .expertise__content {
   display: flex;
@@ -192,6 +190,7 @@ body {
 }
 .expertise__content_item p {
   font-size: 12px;
+  text-align: center;
 }
 .feedback {
   position: relative;
@@ -201,23 +200,9 @@ body {
   display: flex;
   justify-content: center;
 }
-.feedback h2 {
-  padding-top: 30px;
-  font-family: 'Krona One', sans-serif;
-  font-size: 26px;
-}
-.feedback h3 {
-  font-family: 'Krona One', sans-serif;
-  font-size: 12px;
-}
 .feedback p {
   line-height: 1.5em;
-}
-.feedback hr {
-  border: none;
-  background-color: #03d3c7;
-  width: 80px;
-  height: 2px;
+  text-align: center;
 }
 .feedback__content {
   width: 100vw;
@@ -289,4 +274,37 @@ body {
 #submit:hover {
   background: #535068;
   border: solid 2px #535068;
+}
+/*! ---- FOOTER ----- */
+.contact {
+  position: relative;
+  width: 100vw;
+  height: 70px;
+  background-color: #231f44;
+  color: #f2f4f4;
+}
+.contact__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.contact__content_item {
+  width: 250px;
+  height: 50px;
+  padding-top: 25px;
+  margin-left: 30px;
+}
+.contact__content p {
+  font-family: 'Krona One', sans-serif;
+  font-size: 10px;
+  padding-left: 10px;
+}
+.contact__content img {
+  margin-right: 10px;
+}
+.contact__content a {
+  text-decoration: none;
+  color: #f2f4f4;
 }
